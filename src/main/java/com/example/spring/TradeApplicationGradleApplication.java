@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan("com.example.demo")
+@EnableJpaAuditing
+@ComponentScan("com.example.spring")
 public class TradeApplicationGradleApplication {
 
 	public static void main(String[] args) {
